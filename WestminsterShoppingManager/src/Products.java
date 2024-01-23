@@ -1,2 +1,4 @@
-public class Products {
+import java.io.Serializable;
+
+public abstract class Products implements Serializable {
 }
