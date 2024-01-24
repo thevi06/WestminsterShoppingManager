@@ -22,4 +22,7 @@ public abstract class Products implements Serializable {
     public void setProductId(String productId) {
         this.productId = productId;
     }
+    public String getProductName() {
+        return productName;
+    }
 }
