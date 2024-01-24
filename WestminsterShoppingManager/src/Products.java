@@ -25,4 +25,7 @@ public abstract class Products implements Serializable {
     public String getProductName() {
         return productName;
     }
+    public int getNumOfItems() {
+        return numOfItems;
+    }
 }
