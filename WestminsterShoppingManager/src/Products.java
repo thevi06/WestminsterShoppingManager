@@ -28,4 +28,10 @@ public abstract class Products implements Serializable {
     public int getNumOfItems() {
         return numOfItems;
     }
+    public int getPrice() {
+        return price;
+    }
+
+    public Products() {
+    }
 }
