@@ -32,5 +32,6 @@ public abstract class Products implements Serializable {
         return price;
     }
 
-    
+    public Products() {
+    }
 }
