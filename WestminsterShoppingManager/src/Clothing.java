@@ -6,4 +6,12 @@ public class Clothing extends Products {
         this.size = size;
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Clothing{"+super.toString() +
+                "size='" + size + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
