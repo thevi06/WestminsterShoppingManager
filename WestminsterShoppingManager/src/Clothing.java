@@ -14,4 +14,8 @@ public class Clothing extends Products {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    public String toStringGui() {
+        return size + ',' +color;
+    }
 }
