@@ -26,4 +26,7 @@ public class Clothing extends Products {
     public String getCategory() {
         return "Clothing";
     }
+    public String getInfo() {
+        return toStringGui();
+    }
 }
