@@ -18,4 +18,8 @@ public class Clothing extends Products {
     public String toStringGui() {
         return size + ',' +color;
     }
+
+    public String getSize() {
+        return size;
+    }
 }
