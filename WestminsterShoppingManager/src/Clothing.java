@@ -29,4 +29,7 @@ public class Clothing extends Products {
     public String getInfo() {
         return toStringGui();
     }
+    public String getColor() {
+        return color;
+    }
 }
