@@ -32,4 +32,10 @@ public class Clothing extends Products {
     public String getColor() {
         return color;
     }
+
+    public Clothing(String productId, String productName, int numOfItems, int price, String size, String color) {
+        super(productId, productName, numOfItems, price);
+        this.size = size;
+        this.color = color;
+    }
 }
