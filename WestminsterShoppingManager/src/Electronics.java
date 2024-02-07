@@ -33,6 +33,7 @@ public class Electronics extends Products implements Serializable {
 
     public Electronics(String productId, String productName, int numOfItems, int price, String brand, int warrantyPeriod) {
         super(productId, productName, numOfItems, price);
+        this.brand = brand;
     }
 }
 
