@@ -10,5 +10,8 @@ public class Electronics extends Products implements Serializable {
         this.warrantyPeriod = warrantyPeriod;
         this.name = name;
     }
+
+    public Electronics(String brand, int warrantyPeriod) {
+    }
 }
 
