@@ -40,5 +40,8 @@ public class Electronics extends Products implements Serializable {
     public String getCategory() {
         return "Electronics";
     }
+    public String getInfo() {
+        return toStringGui();
+    }
 }
 
