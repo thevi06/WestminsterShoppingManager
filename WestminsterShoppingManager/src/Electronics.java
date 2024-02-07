@@ -27,5 +27,8 @@ public class Electronics extends Products implements Serializable {
                 ", warrantyPeriod=" + warrantyPeriod +
                 '}';
     }
+    public String toStringGui() {
+        return brand + ',' + warrantyPeriod;
+    }
 }
 
