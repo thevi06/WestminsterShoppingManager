@@ -36,5 +36,9 @@ public class Electronics extends Products implements Serializable {
         this.brand = brand;
         this.warrantyPeriod = warrantyPeriod;
     }
+
+    public String getCategory() {
+        return "Electronics";
+    }
 }
 
