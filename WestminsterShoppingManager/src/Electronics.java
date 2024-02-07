@@ -16,5 +16,8 @@ public class Electronics extends Products implements Serializable {
     public String getBrand() {
         return brand;
     }
+    public int getWarrantyPeriod() {
+        return warrantyPeriod;
+    }
 }
 
