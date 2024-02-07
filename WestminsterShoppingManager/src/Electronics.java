@@ -30,5 +30,7 @@ public class Electronics extends Products implements Serializable {
     public String toStringGui() {
         return brand + ',' + warrantyPeriod;
     }
+
+    public Electronics(String productId, String productName, int numOfItems, int price, String brand, int warrantyPeriod) {
 }
 
