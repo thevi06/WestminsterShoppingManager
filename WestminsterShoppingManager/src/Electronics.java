@@ -22,5 +22,10 @@ public class Electronics extends Products implements Serializable {
 
     @Override
     public String toString() {
+        return "Electronics{"+super.toString() +
+                "brand='" + brand + '\'' +
+                ", warrantyPeriod=" + warrantyPeriod +
+                '}';
+    }
 }
 
