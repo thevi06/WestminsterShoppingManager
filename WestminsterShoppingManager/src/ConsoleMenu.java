@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class ConsoleMenu {
 
     static ShoppingManager manager = new WestminsterShoppingManager();
-    final static Scanner scn =new Scanner(System.in);
+    final static Scanner scn = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         menuloop:
-        while (true){
+        while (true) {
             try {
                 displayMenu();
                 int choice = scn.nextInt();
