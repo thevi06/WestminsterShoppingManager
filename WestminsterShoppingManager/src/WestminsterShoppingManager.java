@@ -8,4 +8,8 @@ public class WestminsterShoppingManager implements ShoppingManager {
     public ArrayList<Electronics> getElectList() {
         return electList;
     }
+
+    public ArrayList<Clothing> getClothList() {
+        return clothList;
+    }
 }
