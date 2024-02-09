@@ -13,3 +13,8 @@ public class ConsoleMenu {
                 displayMenu();
                 int choice = scn.nextInt();
                 //TODO: Validate the user input for integer
+
+                switch (choice) {
+                    case 1:
+                        addProduct();
+                        break;
