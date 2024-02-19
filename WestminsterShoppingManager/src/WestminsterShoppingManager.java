@@ -12,4 +12,8 @@ public class WestminsterShoppingManager implements ShoppingManager {
     public ArrayList<Clothing> getClothList() {
         return clothList;
     }
+
+    public void printProduct(){
+        
+    }
 }
