@@ -14,6 +14,10 @@ public class WestminsterShoppingManager implements ShoppingManager {
     }
 
     public void printProduct(){
-        
+
+        if(getElectList().isEmpty() && getClothList().isEmpty()){
+            System.out.println("No products have added");
+        }else{
+
     }
 }
