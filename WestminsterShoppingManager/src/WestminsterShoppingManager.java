@@ -27,6 +27,13 @@ public class WestminsterShoppingManager implements ShoppingManager {
                     return e1.getProductId().compareTo(e2.getProductId());
                 }
             });
+
+            Collections.sort(clothList, new Comparator<Clothing>() {
+                @Override
+                public int compare(Clothing c1, Clothing c2) {
+                    return c1.getProductId().compareTo(c2.getProductId());
+                }
+            });
         }
 
     }
