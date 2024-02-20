@@ -34,6 +34,10 @@ public class WestminsterShoppingManager implements ShoppingManager {
                     return c1.getProductId().compareTo(c2.getProductId());
                 }
             });
+            System.out.println("\n*** List of all items ***");
+            for (Electronics electronics:electList) {
+                System.out.println("\nProduct Id :"+electronics.getProductId());
+                System.out.println("Product Name :"+electronics.getProductName());
         }
 
     }
