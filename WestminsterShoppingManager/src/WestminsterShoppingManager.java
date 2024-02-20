@@ -47,6 +47,11 @@ public class WestminsterShoppingManager implements ShoppingManager {
             for (Clothing clothing:clothList) {
                 System.out.println("\nProduct Id :"+clothing.getProductId());
                 System.out.println("Product Name :"+clothing.getProductName());
+                System.out.println("Number of Items :"+clothing.getNumOfItems());
+                System.out.println("Price :"+clothing.getPrice());
+                System.out.println("Size :"+clothing.getSize());
+                System.out.println("Color :"+clothing.getColor());
+            }
         }
 
     }
