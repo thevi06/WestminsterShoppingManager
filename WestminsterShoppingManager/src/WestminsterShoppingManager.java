@@ -38,6 +38,11 @@ public class WestminsterShoppingManager implements ShoppingManager {
             for (Electronics electronics:electList) {
                 System.out.println("\nProduct Id :"+electronics.getProductId());
                 System.out.println("Product Name :"+electronics.getProductName());
+                System.out.println("Number of Items :"+electronics.getNumOfItems());
+                System.out.println("Price :"+electronics.getPrice());
+                System.out.println("Brand :"+electronics.getBrand());
+                System.out.println("Warranty period :"+electronics.getWarrantyPeriod());
+            }
         }
 
     }
