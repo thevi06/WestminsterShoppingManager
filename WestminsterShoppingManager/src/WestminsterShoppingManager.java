@@ -80,5 +80,9 @@ public class WestminsterShoppingManager implements ShoppingManager {
                 break;
             }
         }
+
+        if (!found) {
+            System.out.println("\nInvalid product id");
+        }
     }
 }
