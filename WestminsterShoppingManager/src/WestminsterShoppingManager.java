@@ -54,9 +54,8 @@ public class WestminsterShoppingManager implements ShoppingManager {
                 System.out.println("Color :" + clothing.getColor());
             }
         }
-
     }
-
+    // Using Iterator for safe removal
     public void deleteProduct(String productId) {
         boolean found = false;
         Iterator<Electronics> electronicsIterator = electList.iterator();
@@ -66,6 +65,18 @@ public class WestminsterShoppingManager implements ShoppingManager {
                 found = true;
                 electronicsIterator.remove();
                 System.out.println("\nRemoved electronic item");
+                break;
+            }
+        }
+
+        // Using Iterator for safe removal
+        Iterator<Clothing> clothingIterator = getClothList().iterator();
+        while (clothingIterator.hasNext()) {
+            Clothing clothing = clothingIterator.next();
+            if (clothing.getProductId().equals(productId)) {
+                found = true;
+                clothingIterator.remove();
+                System.out.println("\nRemoved clothing item");
                 break;
             }
         }
