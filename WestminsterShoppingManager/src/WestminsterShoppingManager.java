@@ -55,4 +55,7 @@ public class WestminsterShoppingManager implements ShoppingManager {
         }
 
     }
+
+    public void deleteProduct(String productId) {
+        boolean found = false;
 }
