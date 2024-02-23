@@ -88,4 +88,10 @@ public class WestminsterShoppingManager implements ShoppingManager {
 
     public void addProduct(Products products) {
         String productId = products.getProductId();
+
+        // Check if the product ID already exists in either list
+        if (productExists(productId)) {
+            System.out.println("Product ID already exists. Cannot add duplicate.");
+            return;
+        }
 }
