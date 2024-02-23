@@ -85,4 +85,7 @@ public class WestminsterShoppingManager implements ShoppingManager {
             System.out.println("\nInvalid product id");
         }
     }
+
+    public void addProduct(Products products) {
+        String productId = products.getProductId();
 }
