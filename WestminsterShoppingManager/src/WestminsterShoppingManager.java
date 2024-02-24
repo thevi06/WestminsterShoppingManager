@@ -94,4 +94,8 @@ public class WestminsterShoppingManager implements ShoppingManager {
             System.out.println("Product ID already exists. Cannot add duplicate.");
             return;
         }
+
+        if (getClothList().size() + getElectList().size() >= maxProducts) {
+            System.out.println("Maximum limit reached");
+        } else {
 }
