@@ -98,4 +98,11 @@ public class WestminsterShoppingManager implements ShoppingManager {
         if (getClothList().size() + getElectList().size() >= maxProducts) {
             System.out.println("Maximum limit reached");
         } else {
+            if (products instanceof Electronics) {
+                getElectList().add((Electronics) products);
+                System.out.println("Electronics item added");
+            } else if (products instanceof Clothing) {
+                getClothList().add((Clothing) products);
+                System.out.println("Clothing item added");
+        }
 }
