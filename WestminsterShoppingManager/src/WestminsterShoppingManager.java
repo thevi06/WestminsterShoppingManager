@@ -104,5 +104,9 @@ public class WestminsterShoppingManager implements ShoppingManager {
             } else if (products instanceof Clothing) {
                 getClothList().add((Clothing) products);
                 System.out.println("Clothing item added");
+            } else {
+                System.out.println("Unknown product type");
+            }
         }
+    }
 }
