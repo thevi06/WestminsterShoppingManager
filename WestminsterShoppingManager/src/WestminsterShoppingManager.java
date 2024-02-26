@@ -109,4 +109,12 @@ public class WestminsterShoppingManager implements ShoppingManager {
             }
         }
     }
+
+    // Helper method to check if a product ID exists in either list
+    private boolean  productExists(String productId) {
+        for (Electronics electronics : getElectList()) {
+            if (electronics.getProductId().equals(productId)) {
+                return true;
+            }
+        }
 }
