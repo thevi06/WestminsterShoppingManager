@@ -117,4 +117,11 @@ public class WestminsterShoppingManager implements ShoppingManager {
                 return true;
             }
         }
+        for (Clothing clothing : getClothList()) {
+            if (clothing.getProductId().equals(productId)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
