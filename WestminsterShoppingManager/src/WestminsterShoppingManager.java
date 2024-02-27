@@ -133,4 +133,11 @@ public class WestminsterShoppingManager implements ShoppingManager {
         File file = new File("newText.txt");
         FileOutputStream fout = new FileOutputStream(file, true);
         ObjectOutputStream objout = new ObjectOutputStream(fout);
+
+        Iterator it = electList.iterator();
+        while(it.hasNext()){
+            Electronics eleNew = (Electronics) it.next();
+            objout.writeObject(eleNew);
+            System.out.println("data saved successfully");
+        }
 }
