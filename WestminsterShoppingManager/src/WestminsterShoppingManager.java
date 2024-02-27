@@ -140,4 +140,12 @@ public class WestminsterShoppingManager implements ShoppingManager {
             objout.writeObject(eleNew);
             System.out.println("data saved successfully");
         }
+
+        Iterator itc = clothList.iterator();
+        while(itc.hasNext()){
+            Clothing cloNew = (Clothing) itc.next();
+            objout.writeObject(cloNew);
+            System.out.println("clothing data saved successfully");
+        }
+    }
 }
