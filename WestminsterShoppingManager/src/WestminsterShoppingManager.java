@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -124,4 +128,9 @@ public class WestminsterShoppingManager implements ShoppingManager {
         }
         return false;
     }
+
+    public void saveData() throws IOException {
+        File file = new File("newText.txt");
+        FileOutputStream fout = new FileOutputStream(file, true);
+        ObjectOutputStream objout = new ObjectOutputStream(fout);
 }
