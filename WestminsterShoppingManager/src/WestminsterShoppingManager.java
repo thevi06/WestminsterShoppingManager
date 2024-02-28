@@ -148,4 +148,7 @@ public class WestminsterShoppingManager implements ShoppingManager {
             System.out.println("clothing data saved successfully");
         }
     }
+
+    public void loadData() throws IOException {
+        boolean dataLoaded = false;  // Flag to track if any data was loaded from the file
 }
