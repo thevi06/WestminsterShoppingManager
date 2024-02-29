@@ -164,6 +164,13 @@ public class WestminsterShoppingManager implements ShoppingManager {
                             electList.add(electronics);
                             System.out.println("Electronics data loaded from text file");
                             dataLoaded = true;
+
+                        } else if (obj instanceof Clothing) {
+                            Clothing clothing = (Clothing) obj;
+                            clothList.add(clothing);
+                            System.out.println("Clothing data loaded from text file");
+                            dataLoaded = true;
+                        }
             }
         }
 }
