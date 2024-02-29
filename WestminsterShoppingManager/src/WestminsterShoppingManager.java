@@ -154,5 +154,10 @@ public class WestminsterShoppingManager implements ShoppingManager {
 
             try (FileInputStream fin = new FileInputStream("newText.txt");
                  ObjectInputStream objin = new ObjectInputStream(fin)) {
+
+                while (true) {
+                    try {
+                        Object obj = objin.readObject();
+            }
         }
 }
