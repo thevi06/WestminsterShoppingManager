@@ -1,7 +1,4 @@
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -151,4 +148,7 @@ public class WestminsterShoppingManager implements ShoppingManager {
 
     public void loadData() throws IOException {
         boolean dataLoaded = false;  // Flag to track if any data was loaded from the file
+
+        try (FileInputStream fin = new FileInputStream("newText.txt");
+             ObjectInputStream objin = new ObjectInputStream(fin)) {
 }
