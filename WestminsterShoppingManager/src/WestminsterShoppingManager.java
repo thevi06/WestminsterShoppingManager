@@ -158,6 +158,12 @@ public class WestminsterShoppingManager implements ShoppingManager {
                 while (true) {
                     try {
                         Object obj = objin.readObject();
+
+                        if (obj instanceof Electronics) {
+                            Electronics electronics = (Electronics) obj;
+                            electList.add(electronics);
+                            System.out.println("Electronics data loaded from text file");
+                            dataLoaded = true;
             }
         }
 }
