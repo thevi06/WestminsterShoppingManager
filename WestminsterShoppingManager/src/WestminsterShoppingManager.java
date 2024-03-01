@@ -171,6 +171,10 @@ public class WestminsterShoppingManager implements ShoppingManager {
                             System.out.println("Clothing data loaded from text file");
                             dataLoaded = true;
                         }
+
+                    } catch (EOFException e) {
+                        // This exception will be caught when there are no more objects to read
+                        break;
             }
         }
 }
