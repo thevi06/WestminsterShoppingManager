@@ -56,6 +56,7 @@ public class WestminsterShoppingManager implements ShoppingManager {
             }
         }
     }
+
     // Using Iterator for safe removal
     public void deleteProduct(String productId) {
         boolean found = false;
@@ -112,7 +113,7 @@ public class WestminsterShoppingManager implements ShoppingManager {
     }
 
     // Helper method to check if a product ID exists in either list
-    private boolean  productExists(String productId) {
+    private boolean productExists(String productId) {
         for (Electronics electronics : getElectList()) {
             if (electronics.getProductId().equals(productId)) {
                 return true;
@@ -132,14 +133,14 @@ public class WestminsterShoppingManager implements ShoppingManager {
         ObjectOutputStream objout = new ObjectOutputStream(fout);
 
         Iterator it = electList.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             Electronics eleNew = (Electronics) it.next();
             objout.writeObject(eleNew);
             System.out.println("data saved successfully");
         }
 
         Iterator itc = clothList.iterator();
-        while(itc.hasNext()){
+        while (itc.hasNext()) {
             Clothing cloNew = (Clothing) itc.next();
             objout.writeObject(cloNew);
             System.out.println("clothing data saved successfully");
@@ -181,8 +182,18 @@ public class WestminsterShoppingManager implements ShoppingManager {
                         break;
                     }
                 }
+
             } catch (IOException e) {
                 // Handle other IO exceptions
                 e.printStackTrace();
+            }
+
+            // Check the flag and display a message if the file was empty
+            if (!dataLoaded) {
+                System.out.println("Text file is empty");
+            }
         }
+
+
+    }
 }
