@@ -181,6 +181,8 @@ public class WestminsterShoppingManager implements ShoppingManager {
                         break;
                     }
                 }
-            }
+            } catch (IOException e) {
+                // Handle other IO exceptions
+                e.printStackTrace();
         }
 }
