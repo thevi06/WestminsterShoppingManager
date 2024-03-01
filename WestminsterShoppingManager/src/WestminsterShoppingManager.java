@@ -175,6 +175,12 @@ public class WestminsterShoppingManager implements ShoppingManager {
                     } catch (EOFException e) {
                         // This exception will be caught when there are no more objects to read
                         break;
+
+                    } catch (ClassNotFoundException | IOException e) {
+                        e.printStackTrace();
+                        break;
+                    }
+                }
             }
         }
 }
