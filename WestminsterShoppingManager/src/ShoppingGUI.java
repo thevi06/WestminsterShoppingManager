@@ -1,5 +1,6 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 
 public class ShoppingGUI extends JFrame {
 
@@ -9,3 +10,6 @@ public class ShoppingGUI extends JFrame {
     public ShoppingGUI(WestminsterShoppingManager manager) {
         setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+        setTitle("Westminster Shopping Center");
+        setLocationRelativeTo(null);
