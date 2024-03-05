@@ -17,3 +17,5 @@ public class ShoppingGUI extends JFrame {
         JLabel titleLabel = new JLabel("Westminster Shopping Center");
         titleLabel.setFont(new Font("Calibre", Font.BOLD, 29));
         JPanel titlePane = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        titlePane.add(titleLabel);
+        add("North", titlePane);
