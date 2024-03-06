@@ -22,3 +22,6 @@ public class ShoppingGUI extends JFrame {
 
         // Button Panel
         JPanel btnPanel = new JPanel();
+
+        JButton sortBtn = new JButton("Sort");
+        btnPanel.add(sortBtn);
