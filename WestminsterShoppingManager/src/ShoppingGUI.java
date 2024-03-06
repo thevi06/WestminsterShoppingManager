@@ -19,3 +19,6 @@ public class ShoppingGUI extends JFrame {
         JPanel titlePane = new JPanel(new FlowLayout(FlowLayout.CENTER));
         titlePane.add(titleLabel);
         add("North", titlePane);
+
+        // Button Panel
+        JPanel btnPanel = new JPanel();
