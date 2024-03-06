@@ -28,3 +28,6 @@ public class ShoppingGUI extends JFrame {
 
         JButton addCart = new JButton("Add Cart");
         btnPanel.add(addCart);
+
+        JLabel ddText = new JLabel("Select product category:");
+        btnPanel.add(ddText);
