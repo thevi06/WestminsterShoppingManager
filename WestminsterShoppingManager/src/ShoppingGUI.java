@@ -43,3 +43,10 @@ public class ShoppingGUI extends JFrame {
                 updateTable(selectedCategory, tableModel, manager);
             }
         });
+
+        sortBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sortTable();
+            }
+        });
