@@ -1,6 +1,7 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ShoppingGUI extends JFrame {
@@ -36,3 +37,9 @@ public class ShoppingGUI extends JFrame {
         String[] items = {"All", "Electronics", "Clothes"};
         JComboBox<String> dropdown = new JComboBox<>(items);
         dropdown.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedCategory = dropdown.getSelectedItem().toString();
+                updateTable(selectedCategory, tableModel, manager);
+            }
+        });
