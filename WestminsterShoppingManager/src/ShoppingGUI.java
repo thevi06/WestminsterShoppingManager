@@ -50,3 +50,6 @@ public class ShoppingGUI extends JFrame {
                 sortTable();
             }
         });
+        btnPanel.add(dropdown);
+
+        add(btnPanel, BorderLayout.NORTH);
