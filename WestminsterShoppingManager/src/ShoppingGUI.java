@@ -65,3 +65,9 @@ public class ShoppingGUI extends JFrame {
             Object[] rowData = {clothing.getProductId(), clothing.getProductName(), clothing.getCategory(), clothing.getPrice(), clothing.getNumOfItems(), clothing.getInfo()};
             tableModel.addRow(rowData);
         }
+
+        ArrayList<Electronics> electList = manager.getElectList();
+        for (Electronics electronics : electList) {
+            Object[] rowData = {electronics.getProductId(), electronics.getProductName(), electronics.getCategory(), electronics.getPrice(), electronics.getNumOfItems(), electronics.getInfo()};
+            tableModel.addRow(rowData);
+        }
