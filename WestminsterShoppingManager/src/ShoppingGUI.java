@@ -3,6 +3,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class ShoppingGUI extends JFrame {
 
@@ -58,3 +59,9 @@ public class ShoppingGUI extends JFrame {
         String[] columnNames = {"Product ID", "Name", "Category", "Price", "Number of Items", "Info"};
         tableModel = new DefaultTableModel(columnNames, 0);
         JTable productListTable = new JTable(tableModel);
+
+        ArrayList<Clothing> clothList = manager.getClothList();
+        for (Clothing clothing : clothList) {
+            Object[] rowData = {clothing.getProductId(), clothing.getProductName(), clothing.getCategory(), clothing.getPrice(), clothing.getNumOfItems(), clothing.getInfo()};
+            tableModel.addRow(rowData);
+        }
