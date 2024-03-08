@@ -53,3 +53,8 @@ public class ShoppingGUI extends JFrame {
         btnPanel.add(dropdown);
 
         add(btnPanel, BorderLayout.NORTH);
+
+        // Table Panel
+        String[] columnNames = {"Product ID", "Name", "Category", "Price", "Number of Items", "Info"};
+        tableModel = new DefaultTableModel(columnNames, 0);
+        JTable productListTable = new JTable(tableModel);
