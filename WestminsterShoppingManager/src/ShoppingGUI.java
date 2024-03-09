@@ -71,3 +71,7 @@ public class ShoppingGUI extends JFrame {
             Object[] rowData = {electronics.getProductId(), electronics.getProductName(), electronics.getCategory(), electronics.getPrice(), electronics.getNumOfItems(), electronics.getInfo()};
             tableModel.addRow(rowData);
         }
+
+        productListTable.setDefaultEditor(Object.class, null);
+        JScrollPane pane = new JScrollPane(productListTable);
+        add(pane, BorderLayout.CENTER);
