@@ -75,3 +75,6 @@ public class ShoppingGUI extends JFrame {
         productListTable.setDefaultEditor(Object.class, null);
         JScrollPane pane = new JScrollPane(productListTable);
         add(pane, BorderLayout.CENTER);
+
+        setVisible(true);
+    }
