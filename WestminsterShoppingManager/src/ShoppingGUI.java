@@ -78,3 +78,7 @@ public class ShoppingGUI extends JFrame {
 
         setVisible(true);
     }
+
+    // Method to populate the table with data from the ArrayLists
+    private void populateTable(ArrayList<Clothing> clothList, ArrayList<Electronics> electList, DefaultTableModel tableModel) {
+        for (Clothing clothing : clothList) {
