@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ShoppingGUI extends JFrame {
 
@@ -82,3 +83,10 @@ public class ShoppingGUI extends JFrame {
     // Method to populate the table with data from the ArrayLists
     private void populateTable(ArrayList<Clothing> clothList, ArrayList<Electronics> electList, DefaultTableModel tableModel) {
         for (Clothing clothing : clothList) {
+            Object[] rowData = {clothing.getProductId(), clothing.getProductName(), clothing.getCategory(), clothing.getPrice(),clothing.getNumOfItems(), clothing.getInfo()};
+            if (clothing.getNumOfItems() < 3) {
+                // Set the background color of the entire row to red
+                Arrays.fill(rowData, Color.RED);
+            }
+            tableModel.addRow(rowData);
+        }
