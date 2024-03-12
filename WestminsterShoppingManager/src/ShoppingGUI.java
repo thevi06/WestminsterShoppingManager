@@ -103,3 +103,6 @@ public class ShoppingGUI extends JFrame {
     private void updateTable(String selectedCategory, DefaultTableModel tableModel, WestminsterShoppingManager manager) {
         // Check if tableModel is null, and initialize it if needed
         if (tableModel == null) {
+            String[] columnNames = {"Product ID", "Name", "Category", "Price", "Number of Items","Info"};
+            tableModel = new DefaultTableModel(columnNames, 0);
+        }
