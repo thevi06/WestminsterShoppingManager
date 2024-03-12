@@ -113,3 +113,9 @@ public class ShoppingGUI extends JFrame {
         if (selectedCategory.equals("All")) {
             populateTable(manager.getClothList(), manager.getElectList(), tableModel);
         } else if (selectedCategory.equals("Clothes")) {
+            populateTable(manager.getClothList(), new ArrayList<>(), tableModel);
+        } else if (selectedCategory.equals("Electronics")) {
+            populateTable(new ArrayList<>(), manager.getElectList(), tableModel);
+        }
+    }
+        
