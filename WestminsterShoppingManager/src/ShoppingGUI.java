@@ -93,3 +93,9 @@ public class ShoppingGUI extends JFrame {
         for (Electronics electronics : electList) {
             Object[] rowData = {electronics.getProductId(), electronics.getProductName(), electronics.getCategory(), electronics.getPrice(),electronics.getNumOfItems(), electronics.getInfo()};
             if (electronics.getNumOfItems() < 3) {
+                // Set the background color of the entire row to red
+                Arrays.fill(rowData, Color.RED);
+            }
+            tableModel.addRow(rowData);
+        }
+    }
