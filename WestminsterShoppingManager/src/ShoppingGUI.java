@@ -99,3 +99,7 @@ public class ShoppingGUI extends JFrame {
             tableModel.addRow(rowData);
         }
     }
+    // Method to update the table based on the selected category
+    private void updateTable(String selectedCategory, DefaultTableModel tableModel, WestminsterShoppingManager manager) {
+        // Check if tableModel is null, and initialize it if needed
+        if (tableModel == null) {
