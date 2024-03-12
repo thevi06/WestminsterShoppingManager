@@ -108,3 +108,8 @@ public class ShoppingGUI extends JFrame {
         }
         // Clear the table
         tableModel.setRowCount(0);
+
+        // Populate the table with data based on the selected category
+        if (selectedCategory.equals("All")) {
+            populateTable(manager.getClothList(), manager.getElectList(), tableModel);
+        } else if (selectedCategory.equals("Clothes")) {
