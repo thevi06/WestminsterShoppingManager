@@ -106,3 +106,5 @@ public class ShoppingGUI extends JFrame {
             String[] columnNames = {"Product ID", "Name", "Category", "Price", "Number of Items","Info"};
             tableModel = new DefaultTableModel(columnNames, 0);
         }
+        // Clear the table
+        tableModel.setRowCount(0);
