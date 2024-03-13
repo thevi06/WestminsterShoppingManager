@@ -118,4 +118,13 @@ public class ShoppingGUI extends JFrame {
             populateTable(new ArrayList<>(), manager.getElectList(), tableModel);
         }
     }
-        
+
+    private void sortTable() {
+        ArrayList<Object[]> data = new ArrayList<>();
+        for (int i = 0; i < tableModel.getRowCount(); i++) {
+            Object[] rowData = new Object[tableModel.getColumnCount()];
+            for (int j = 0; j < tableModel.getColumnCount(); j++) {
+                rowData[j] = tableModel.getValueAt(i, j);
+            }
+            data.add(rowData);
+        }
