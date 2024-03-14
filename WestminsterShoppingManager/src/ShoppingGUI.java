@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class ShoppingGUI extends JFrame {
 
@@ -128,3 +129,4 @@ public class ShoppingGUI extends JFrame {
             }
             data.add(rowData);
         }
+        data.sort(Comparator.comparing(o -> o[1].toString())); // Sorting based on product name
