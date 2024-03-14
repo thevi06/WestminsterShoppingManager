@@ -137,3 +137,6 @@ public class ShoppingGUI extends JFrame {
             tableModel.addRow(rowData);
         }
     }
+    private void displayProductDetails(String productId, String productName, String category, String price, String numOfItems, String info) {
+        // Clear the existing content in the details panel
+        productDetailsPanel.removeAll();
