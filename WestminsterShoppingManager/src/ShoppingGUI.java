@@ -132,3 +132,8 @@ public class ShoppingGUI extends JFrame {
         data.sort(Comparator.comparing(o -> o[1].toString())); // Sorting based on product name
 
         tableModel.setRowCount(0); // Clear the table
+
+        for (Object[] rowData : data) {
+            tableModel.addRow(rowData);
+        }
+    }
