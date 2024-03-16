@@ -142,3 +142,6 @@ public class ShoppingGUI extends JFrame {
         productDetailsPanel.removeAll();
 
         // Create labels to display product details
+        JLabel productIdLabel = new JLabel("Product ID: " + productId);
+        JLabel productNameLabel = new JLabel("Name: " + productName);
+        JLabel categoryLabel = new JLabel("Category: " + category);
