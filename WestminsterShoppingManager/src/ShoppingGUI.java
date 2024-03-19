@@ -145,3 +145,6 @@ public class ShoppingGUI extends JFrame {
         JLabel productIdLabel = new JLabel("Product ID: " + productId);
         JLabel productNameLabel = new JLabel("Name: " + productName);
         JLabel categoryLabel = new JLabel("Category: " + category);
+        JLabel priceLabel = new JLabel("Price: " + price);
+        JLabel numOfItemsLabel = new JLabel("Number of Items: " + numOfItems);
+        JLabel infoLabel = new JLabel("Info: " + info);
