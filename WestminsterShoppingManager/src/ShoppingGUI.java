@@ -156,3 +156,12 @@ public class ShoppingGUI extends JFrame {
         productDetailsPanel.add(priceLabel);
         productDetailsPanel.add(numOfItemsLabel);
         productDetailsPanel.add(infoLabel);
+
+        // Repaint the details panel
+        productDetailsPanel.revalidate();
+        productDetailsPanel.repaint();
+
+
+    }
+
+}
