@@ -18,3 +18,6 @@ public class ConsoleMenu {
                     case 1:
                         addProduct();
                         break;
+                    case 2:
+                        deleteProduct();
+                        break;
