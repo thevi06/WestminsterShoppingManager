@@ -36,3 +36,6 @@ public class ConsoleMenu {
                     case 7:
                         System.out.println("Thank you for using the system");
                         break menuloop;
+                    default:
+                        System.out.println("invalid option");
+                }
