@@ -33,3 +33,6 @@ public class ConsoleMenu {
                     case 6:
                         ShoppingGUI g1 = new ShoppingGUI((WestminsterShoppingManager) manager);
                         break;
+                    case 7:
+                        System.out.println("Thank you for using the system");
+                        break menuloop;
