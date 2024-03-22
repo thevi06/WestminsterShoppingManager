@@ -21,3 +21,6 @@ public class ConsoleMenu {
                     case 2:
                         deleteProduct();
                         break;
+                    case 3:
+                        manager.printProduct();
+                        break;
