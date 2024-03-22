@@ -30,3 +30,6 @@ public class ConsoleMenu {
                     case 5:
                         manager.loadData();
                         break;
+                    case 6:
+                        ShoppingGUI g1 = new ShoppingGUI((WestminsterShoppingManager) manager);
+                        break;
