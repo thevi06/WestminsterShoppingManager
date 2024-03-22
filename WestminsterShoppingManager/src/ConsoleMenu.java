@@ -27,3 +27,6 @@ public class ConsoleMenu {
                     case 4:
                         manager.saveData();
                         break;
+                    case 5:
+                        manager.loadData();
+                        break;
