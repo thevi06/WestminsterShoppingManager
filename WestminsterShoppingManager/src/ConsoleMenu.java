@@ -24,3 +24,6 @@ public class ConsoleMenu {
                     case 3:
                         manager.printProduct();
                         break;
+                    case 4:
+                        manager.saveData();
+                        break;
