@@ -48,3 +48,9 @@ public class ConsoleMenu {
         }
 
     }
+
+    public static void displayMenu(){
+        System.out.println("\n ----WELCOME TO WESTMINSTER ONLINE SHOPPING  CENTER-----");
+        System.out.println("1: Add a new product");
+        System.out.println("2: Delete a product");
+        System.out.println("3: Display all products");
