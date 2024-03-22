@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConsoleMenu {
@@ -39,3 +40,11 @@ public class ConsoleMenu {
                     default:
                         System.out.println("invalid option");
                 }
+            }catch (InputMismatchException e){
+                System.out.println("invalid input type");
+                scn.next();  // Clear the scanner buffer
+
+            }
+        }
+
+    }
