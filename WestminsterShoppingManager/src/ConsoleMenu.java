@@ -54,3 +54,8 @@ public class ConsoleMenu {
         System.out.println("1: Add a new product");
         System.out.println("2: Delete a product");
         System.out.println("3: Display all products");
+        System.out.println("4: Save Data");
+        System.out.println("5: Load Data");
+        System.out.println("6: Display GUI");
+        System.out.println("7: Quite application");
+    }
