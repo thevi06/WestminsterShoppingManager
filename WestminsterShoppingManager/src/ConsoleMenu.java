@@ -62,3 +62,9 @@ public class ConsoleMenu {
 
     //add product method
     public static void addProduct(){
+
+        try{
+            System.out.println("what do you want to add?");
+            System.out.println("1.Electronics\n2.Clothing");
+            String x= scn.next();
+    }
