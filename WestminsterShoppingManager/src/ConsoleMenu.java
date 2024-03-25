@@ -59,3 +59,6 @@ public class ConsoleMenu {
         System.out.println("6: Display GUI");
         System.out.println("7: Quite application");
     }
+
+    //add product method
+    public static void addProduct(){
