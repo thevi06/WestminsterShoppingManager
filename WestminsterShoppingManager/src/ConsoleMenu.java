@@ -67,4 +67,9 @@ public class ConsoleMenu {
             System.out.println("what do you want to add?");
             System.out.println("1.Electronics\n2.Clothing");
             String x= scn.next();
+
+            if(x.equals("1")||x.equals("2")) {
+
+                System.out.println("Enter product ID");
+                String pId;
     }
