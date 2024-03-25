@@ -72,4 +72,6 @@ public class ConsoleMenu {
 
                 System.out.println("Enter product ID");
                 String pId;
+                do {
+                    pId = scn.next();
     }
