@@ -77,4 +77,8 @@ public class ConsoleMenu {
                     if (pId.trim().isEmpty()) {
                         System.out.println("Product ID cannot be empty. Please enter again:");
                     }
+                } while (pId.trim().isEmpty());
+
+                System.out.println("Enter product Name");
+                String pName;
     }
