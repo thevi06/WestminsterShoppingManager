@@ -81,4 +81,9 @@ public class ConsoleMenu {
 
                 System.out.println("Enter product Name");
                 String pName;
+                do {
+                    pName = scn.next();
+                    if (pName.trim().isEmpty()) {
+                        System.out.println("Product Name cannot be empty. Please enter again:");
+                    }
     }
