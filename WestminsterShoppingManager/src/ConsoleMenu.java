@@ -95,4 +95,8 @@ public class ConsoleMenu {
                         System.out.println("Invalid input. Please reenter number of products");
                         scn.next();  // Consume the invalid input
                     }
+                    pAmount = scn.nextInt();
+                    if (pAmount <= 0) {
+                        System.out.println("Number of products must be positive. Please enter again:");
+                    }
     }
