@@ -99,4 +99,8 @@ public class ConsoleMenu {
                     if (pAmount <= 0) {
                         System.out.println("Number of products must be positive. Please enter again:");
                     }
+                } while (pAmount <= 0);
+
+                System.out.println("Enter product price");
+                int pPrice;
     }
