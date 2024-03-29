@@ -108,4 +108,8 @@ public class ConsoleMenu {
                         System.out.println("Invalid input. Please reenter product price");
                         scn.next();  // Consume the invalid input
                     }
+                    pPrice = scn.nextInt();
+                    if (pPrice <= 0) {
+                        System.out.println("Product price must be positive. Please enter again:");
+                    }
     }
