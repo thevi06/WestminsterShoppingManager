@@ -103,4 +103,9 @@ public class ConsoleMenu {
 
                 System.out.println("Enter product price");
                 int pPrice;
+                do {
+                    while (!scn.hasNextInt()) {
+                        System.out.println("Invalid input. Please reenter product price");
+                        scn.next();  // Consume the invalid input
+                    }
     }
