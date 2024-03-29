@@ -112,4 +112,5 @@ public class ConsoleMenu {
                     if (pPrice <= 0) {
                         System.out.println("Product price must be positive. Please enter again:");
                     }
+                } while (pPrice <= 0);
     }
