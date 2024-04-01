@@ -117,4 +117,10 @@ public class ConsoleMenu {
                 if (x.equals("1")) {
                     System.out.println("Enter product brand");
                     String pBrand;
+                    do {
+                        pBrand = scn.next();
+                        if (pBrand.trim().isEmpty()) {
+                            System.out.println("Product brand cannot be empty. Please enter again:");
+                        }
+                    } while (pBrand.trim().isEmpty());
     }
