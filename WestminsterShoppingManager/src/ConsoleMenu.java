@@ -113,4 +113,8 @@ public class ConsoleMenu {
                         System.out.println("Product price must be positive. Please enter again:");
                     }
                 } while (pPrice <= 0);
+
+                if (x.equals("1")) {
+                    System.out.println("Enter product brand");
+                    String pBrand;
     }
