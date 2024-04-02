@@ -130,4 +130,9 @@ public class ConsoleMenu {
                         while (!scn.hasNextInt()) {
                             System.out.println("Invalid input. Please reenter product warranty period");
                             scn.next();
+                        }
+                        pWarranty = scn.nextInt();
+                        if (pWarranty <= 0) {
+                            System.out.println("Product warranty period must be positive. Please enter again:");
+                        }
     }
