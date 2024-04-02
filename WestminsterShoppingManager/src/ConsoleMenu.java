@@ -123,4 +123,7 @@ public class ConsoleMenu {
                             System.out.println("Product brand cannot be empty. Please enter again:");
                         }
                     } while (pBrand.trim().isEmpty());
+
+                    System.out.println("Enter product warranty period");
+                    int pWarranty;
     }
