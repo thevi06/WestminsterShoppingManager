@@ -135,4 +135,8 @@ public class ConsoleMenu {
                         if (pWarranty <= 0) {
                             System.out.println("Product warranty period must be positive. Please enter again:");
                         }
+                    } while (pWarranty <= 0);
+
+                    Electronics electronics = new Electronics(pId, pName, pAmount, pPrice, pBrand, pWarranty);
+                    manager.addProduct(electronics);
     }
