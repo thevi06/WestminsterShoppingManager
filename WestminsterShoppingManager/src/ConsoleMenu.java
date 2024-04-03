@@ -143,4 +143,9 @@ public class ConsoleMenu {
                 } else if (x.equals("2")) {
                     System.out.println("Enter product Size");
                     String pSize;
+                    do {
+                        pSize = scn.next();
+                        if (pSize.trim().isEmpty()) {
+                            System.out.println("Product size cannot be empty. Please enter again:");
+                        }
     }
