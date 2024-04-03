@@ -148,4 +148,5 @@ public class ConsoleMenu {
                         if (pSize.trim().isEmpty()) {
                             System.out.println("Product size cannot be empty. Please enter again:");
                         }
+                    } while (pSize.trim().isEmpty());
     }
