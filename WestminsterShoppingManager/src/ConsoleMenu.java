@@ -139,4 +139,8 @@ public class ConsoleMenu {
 
                     Electronics electronics = new Electronics(pId, pName, pAmount, pPrice, pBrand, pWarranty);
                     manager.addProduct(electronics);
+
+                } else if (x.equals("2")) {
+                    System.out.println("Enter product Size");
+                    String pSize;
     }
