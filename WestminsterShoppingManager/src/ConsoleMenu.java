@@ -166,4 +166,8 @@ public class ConsoleMenu {
             }else {
                 System.out.println("Invalid input");
             }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+    }
     }
