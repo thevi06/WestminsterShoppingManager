@@ -149,4 +149,7 @@ public class ConsoleMenu {
                             System.out.println("Product size cannot be empty. Please enter again:");
                         }
                     } while (pSize.trim().isEmpty());
+
+                    System.out.println("Enter product color");
+                    String pColor;
     }
