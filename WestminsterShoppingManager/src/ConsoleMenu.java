@@ -162,4 +162,8 @@ public class ConsoleMenu {
                     Clothing clothing = new Clothing(pId, pName, pAmount, pPrice, pSize, pColor);
                     manager.addProduct(clothing);
                 }
+
+            }else {
+                System.out.println("Invalid input");
+            }
     }
