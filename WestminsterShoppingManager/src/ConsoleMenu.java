@@ -157,5 +157,5 @@ public class ConsoleMenu {
                         if (pColor.trim().isEmpty()) {
                             System.out.println("Product color cannot be empty. Please enter again:");
                         }
-                    }
+                    } while (pColor.trim().isEmpty());
     }
