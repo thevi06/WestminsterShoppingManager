@@ -152,4 +152,10 @@ public class ConsoleMenu {
 
                     System.out.println("Enter product color");
                     String pColor;
+                    do {
+                        pColor = scn.next();
+                        if (pColor.trim().isEmpty()) {
+                            System.out.println("Product color cannot be empty. Please enter again:");
+                        }
+                    }
     }
