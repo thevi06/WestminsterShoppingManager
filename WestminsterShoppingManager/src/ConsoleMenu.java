@@ -158,4 +158,8 @@ public class ConsoleMenu {
                             System.out.println("Product color cannot be empty. Please enter again:");
                         }
                     } while (pColor.trim().isEmpty());
+
+                    Clothing clothing = new Clothing(pId, pName, pAmount, pPrice, pSize, pColor);
+                    manager.addProduct(clothing);
+                }
     }
