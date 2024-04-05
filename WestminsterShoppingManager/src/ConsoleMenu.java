@@ -170,4 +170,10 @@ public class ConsoleMenu {
             System.out.println(e);
         }
     }
+
+    //delete product id
+    public static void deleteProduct(){
+        System.out.println("Enter product ID to delete");
+        String pId;
+        boolean isValidId = false;
     }
