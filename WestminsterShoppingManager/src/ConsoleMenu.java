@@ -176,4 +176,7 @@ public class ConsoleMenu {
         System.out.println("Enter product ID to delete");
         String pId;
         boolean isValidId = false;
+
+        do {
+            pId = scn.next();
     }
