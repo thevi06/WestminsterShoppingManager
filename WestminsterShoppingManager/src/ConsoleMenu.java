@@ -179,4 +179,10 @@ public class ConsoleMenu {
 
         do {
             pId = scn.next();
+
+            // Check if the ID is empty
+            if (pId.trim().isEmpty()) {
+                System.out.println("Product ID cannot be empty. Please enter again:");
+                continue; // Continue to the next iteration of the loop
+            }
     }
