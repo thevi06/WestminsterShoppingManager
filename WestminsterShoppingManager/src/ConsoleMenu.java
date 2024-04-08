@@ -185,4 +185,13 @@ public class ConsoleMenu {
                 System.out.println("Product ID cannot be empty. Please enter again:");
                 continue; // Continue to the next iteration of the loop
             }
+
+            isValidId = true; // Set the flag to true if a valid ID is entered
+
+        } while (!isValidId);
+
+        manager.deleteProduct(pId);
+
+
     }
+}
