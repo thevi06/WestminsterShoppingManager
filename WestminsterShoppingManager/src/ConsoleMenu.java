@@ -1,15 +1,15 @@
-import java.io.IOException;
+import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConsoleMenu {
 
     static ShoppingManager manager = new WestminsterShoppingManager();
-    final static Scanner scn = new Scanner(System.in);
+    final static Scanner scn =new Scanner(System.in);
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         menuloop:
-        while (true) {
+        while (true){
             try {
                 displayMenu();
                 int choice = scn.nextInt();
@@ -27,6 +27,7 @@ public class ConsoleMenu {
                         break;
                     case 4:
                         manager.saveData();
+
                         break;
                     case 5:
                         manager.loadData();
@@ -48,7 +49,6 @@ public class ConsoleMenu {
         }
 
     }
-
     public static void displayMenu(){
         System.out.println("\n ----WELCOME TO WESTMINSTER ONLINE SHOPPING  CENTER-----");
         System.out.println("1: Add a new product");
@@ -170,7 +170,6 @@ public class ConsoleMenu {
             System.out.println(e);
         }
     }
-
     //delete product id
     public static void deleteProduct(){
         System.out.println("Enter product ID to delete");
@@ -186,6 +185,7 @@ public class ConsoleMenu {
                 continue; // Continue to the next iteration of the loop
             }
 
+
             isValidId = true; // Set the flag to true if a valid ID is entered
 
         } while (!isValidId);
@@ -194,4 +194,5 @@ public class ConsoleMenu {
 
 
     }
+
 }
