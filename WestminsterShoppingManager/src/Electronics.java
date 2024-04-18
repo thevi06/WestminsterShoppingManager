@@ -3,8 +3,8 @@ import java.io.Serializable;
 public class Electronics extends Products implements Serializable {
     private String brand;
     private int warrantyPeriod;
-    private String name;//for demo
 
+    private String name;//for demo
     public Electronics(String brand, int warrantyPeriod, String name) {
         this.brand = brand;
         this.warrantyPeriod = warrantyPeriod;
@@ -13,9 +13,12 @@ public class Electronics extends Products implements Serializable {
 
     public Electronics(String brand, int warrantyPeriod) {
     }
+
     public String getBrand() {
         return brand;
     }
+
+
     public int getWarrantyPeriod() {
         return warrantyPeriod;
     }
@@ -36,12 +39,13 @@ public class Electronics extends Products implements Serializable {
         this.brand = brand;
         this.warrantyPeriod = warrantyPeriod;
     }
-
     public String getCategory() {
         return "Electronics";
     }
     public String getInfo() {
         return toStringGui();
     }
-}
 
+
+
+}
